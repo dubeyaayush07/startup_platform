@@ -1,32 +1,4 @@
 {% extends "main_app/base.html" %} {% block content %}
-<header>
-    <a href="# " class="logo ">LOGO</a>
-    <div class="menu-toggle "></div>
-    <nav>
-        <ul>
-            <li><a href="# " class="active ">HOME</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="# ">STARTUPS</a></li>
-            <li><a href="# ">MENTORS</a></li>
-            <li><a href="# ">PARTNERS</a></li>
-            <li><a href="# ">CONTACT</a></li>
-        </ul>
-    </nav>
-    <div class="clearfix "></div>
-</header>
-<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('.menu-toggle').click(function() {
-            $('.menu-toggle').toggleClass('active')
-            $('nav').toggleClass('active')
-        })
-    })
-</script>
-
-<div class="img ">
-    <img class="backimg " src="backimg.jpg ">
-</div>
 
 <div class="text ">
     <h1>Our Platform</h1>
@@ -35,7 +7,7 @@
     <p class="para ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, vel? Repudiandae quas cupiditate qui, impedit voluptate facere rerum modi minus, provident ipsam deleniti vitae. Non nostrum mollitia amet aut delectus?</p>
     <p class="para ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, vel? Repudiandae quas cupiditate qui, impedit voluptate facere rerum modi minus, provident ipsam deleniti vitae. Non nostrum mollitia amet aut delectus?</p>
 </div>
-<div class="buttonHolder ">
-    <a href="getstarted.html "><input value="Get Started " type="submit " class="button "></a>
+<div class="buttonHolder">
+    <a href="#"><input value="Get Started" type="submit" class="button"></a>
 </div>
 {% endblock %}
