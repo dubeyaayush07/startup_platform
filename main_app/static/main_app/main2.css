@@ -22,3 +22,10 @@
     background: #6fd1a2;
     color: white;
 }
+
+.help-btn {
+    width: 30%;
+    text-align: center;
+    margin:auto;
+    display:block;
+}

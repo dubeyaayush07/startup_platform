@@ -5,12 +5,32 @@
         {% for profile in profiles %}
             <div class="card text-center">
                 <div class="card-header">
-                    {{ profile.category }}
+                    {{ profile.get_category_display }}
                 </div>
                 <div class="card-body">
                 <h5 class="card-title">{{ profile.user.username }}</h5>
                 <p class="card-text">{{ profile.description }}</p>
-                <a href="#" class="btn btn-primary">Help</a>
+                {% if user.is_authenticated and user.profile.role == 'M' %}
+                    <button type="button" class="btn btn-outline-dark btn-block help-btn" data-toggle="modal" data-target="#I{{ profile.id }}">
+                        Help
+                    </button>
+
+                    <div class="modal fade" id="I{{ profile.id }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Contact Information</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              {{ profile.user.email }}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                {% endif %}
                 </div>
             </div>
         {% endfor %}
