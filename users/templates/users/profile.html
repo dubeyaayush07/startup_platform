@@ -1,7 +1,7 @@
 {% extends "main_app/base.html" %}
 {% load crispy_forms_tags %}
 {% block content %}
-    <div class="content-section">
+    <div class="content-section container">
       <div class="media">
         <div class="media-body">
           <h2 class="account-heading">{{ user.username }}</h2>
@@ -16,7 +16,7 @@
               {{ p_form|crispy }}
           </fieldset>
           <div class="form-group">
-              <button class="btn btn-outline-info" type="submit">Update</button>
+              <button class="sbtn" type="submit">Update</button>
           </div>
       </form>
     </div>
