@@ -2,8 +2,6 @@
 body {
     background: white;
     font-family: 'Poppins', sans-serif;
-    margin: auto;
-    padding: 0;
 }
 
 .logo {
@@ -151,13 +149,6 @@ li:hover {
     color: tomato;
 }
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
 .text {
     max-height: 100%;
     display: block;
@@ -255,27 +246,6 @@ li:hover {
     border: 4px solid #045a44;
     background: whitesmoke;
     color: #035f48;
-}
-
-.name {
-    color: white;
-}
-
-.backimg {
-    width: 100%;
-    height: auto;
-    height: 300px;
-}
-
-.header {
-    font-size: 30px;
-    padding: 0;
-}
-
-.line {
-    position: absolute;
-    top: 100px;
-    left: 425px;
 }
 
 .buttonHolder {
