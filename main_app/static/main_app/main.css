@@ -58,6 +58,7 @@ header {
     background: white;
     box-sizing: border-box;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 4rem;
 }
 
 @media (max-width:1200px) {
@@ -145,22 +146,14 @@ li:hover {
     align-items: center;
 }
 
-.buttonHolder {
-    position: relative;
-    left: %;
-    bottom: %;
-    text-align: center;
-}
-
 .button {
-    padding: 15px 32px;
+    padding: 12px 24px;
     background-color: white;
     color: #069370;
     text-align: center;
     border-radius: 10px;
     border: 2px solid #069370;
     font-weight: 500;
-    font-size: 25px;
 }
 
 .button:hover {
@@ -173,4 +166,11 @@ li:hover {
     font-size: 30px;
     padding: 0;
 }
+
+a, a:hover {
+    color: #069370;
+    text-decoration: none;
+}
+
+
 
