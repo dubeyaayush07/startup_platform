@@ -1,0 +1,24 @@
+.card {
+    margin: 2rem;  
+}
+
+.container {
+    margin-top: 4rem;
+}
+
+.sbtn {
+    padding: 10px 20px;
+    background-color: white;
+    color: #069370;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #069370;
+    font-weight: 500;
+    
+}
+
+.sbtn:hover {
+    border: 2px solid white;
+    background: #6fd1a2;
+    color: white;
+}

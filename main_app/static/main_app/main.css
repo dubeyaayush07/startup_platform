@@ -221,6 +221,7 @@ li:hover {
     font-weight: 500;
     font-size: 25px;
     margin: 20px;
+    width: 50%;
 }
 
 #small-button {
@@ -291,8 +292,4 @@ li:hover {
 
 .grid-item a:hover {
     color: #069370;
-}
-
-.card {
-    margin: 2rem;
 }
