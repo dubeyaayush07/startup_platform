@@ -10,11 +10,18 @@ CATEGORY_CHOICES = (
     ('OTHER', 'other'),
 )
 
+
+ROLE_CHOICES = (
+    ('M', 'Mentor'),
+    ('S', 'Startup'),
+)
+
+
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    is_mentor = models.BooleanField(default=False)
-    description = models.TextField
-    category = models.CharField(max_length=5, choices=CATEGORY_CHOICES, default='EAD')
+    role = models.CharField(max_length=1, choices=ROLE_CHOICES, default='S')
+    description = models.TextField()
+    category = models.CharField(max_length=6, choices=CATEGORY_CHOICES, default='EAD')
 
     def __str__(self):
         return f'{self.user.username} Profile'
