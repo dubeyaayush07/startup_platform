@@ -19,6 +19,11 @@ body {
     text-decoration: none;
 }
 
+.logo:hover {
+    color: #057c5e;
+    text-decoration: none;
+}
+
 .clearfix {
     clear: both;
 }
@@ -45,10 +50,15 @@ nav ul li a {
     color: #262626;
 }
 
+nav ul li a.active:hover {
+    background: #068666;
+}
+
 nav ul li a.active,
 nav ul li a:hover {
     background: #6fd1a2;
     color: #ffffff;
+    text-decoration: none;
     transition: 0.5s;
 }
 
@@ -58,7 +68,6 @@ header {
     background: white;
     box-sizing: border-box;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    margin-bottom: 4rem;
 }
 
 @media (max-width:1200px) {
@@ -103,6 +112,32 @@ header {
     }
 }
 
+.jumbotron-area {
+    height: 500px;
+    width: 100%;
+    background: #069370;
+}
+
+.jumbotron {
+    max-width: 500px;
+    height: 300px;
+    position: absolute;
+    margin-left: 800px;
+    margin-top: 100px;
+}
+
+.jumbotron-text {
+    max-width: 500px;
+    position: absolute;
+    color: whitesmoke;
+    margin-top: 100px;
+    margin-left: 75px;
+}
+
+.jumbotron-text h1 {
+    color: whitesmoke;
+}
+
 h1 {
     color: #069370;
     text-align: center;
@@ -116,6 +151,12 @@ li:hover {
     color: tomato;
 }
 
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
 
 .text {
     max-height: 100%;
@@ -129,7 +170,7 @@ li:hover {
     background: white;
     margin-top: 40px;
     border-radius: 50px;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
     position: relative;
     -webkit-box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.56);
     -moz-box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.56);
@@ -146,14 +187,62 @@ li:hover {
     align-items: center;
 }
 
+.mentor-area {
+    height: 400px;
+    width: 100%;
+}
+
+.mentor-jumbotron {
+    width: 40%;
+    height: 350px;
+    background-color: #069370;
+    color: whitesmoke;
+}
+
+.mentor-jumbotron h1 {
+    color: whitesmoke;
+}
+
+.startup-area {
+    height: 400px;
+    width: 100%;
+}
+
+.startup-jumbotron {
+    width: 40%;
+    height: 350px;
+    margin-left: 60%;
+    background-color: #069370;
+    color: whitesmoke;
+}
+
+.startup-jumbotron h1 {
+    color: whitesmoke;
+}
+
 .button {
-    padding: 12px 24px;
+    padding: 15px 32px;
     background-color: white;
     color: #069370;
     text-align: center;
     border-radius: 10px;
     border: 2px solid #069370;
     font-weight: 500;
+    font-size: 25px;
+    margin: 20px;
+}
+
+#small-button {
+    padding: 10px 24px;
+    background-color: white;
+    color: #069370;
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid #069370;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 5px;
+    margin-left: 125px;
 }
 
 .button:hover {
@@ -162,15 +251,74 @@ li:hover {
     color: white;
 }
 
+#small-button:hover {
+    border: 4px solid #045a44;
+    background: whitesmoke;
+    color: #035f48;
+}
+
+.name {
+    color: white;
+}
+
+.backimg {
+    width: 100%;
+    height: auto;
+    height: 300px;
+}
+
 .header {
     font-size: 30px;
     padding: 0;
 }
 
-a, a:hover {
+.line {
+    position: absolute;
+    top: 100px;
+    left: 425px;
+}
+
+.buttonHolder {
+    text-align: center;
+}
+
+.footer-area {
+    height: 275px;
+    width: 98%;
+    border: 2px solid #069370;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.footer-area h1 {
+    font-size: 30px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: white;
+    padding: 10px;
+}
+
+.grid-item {
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+
+#community,
+#learn-more {
+    font-size: 20px;
     color: #069370;
+}
+
+.grid-item a {
+    color: black;
     text-decoration: none;
 }
 
-
-
+.grid-item a:hover {
+    color: #069370;
+}
