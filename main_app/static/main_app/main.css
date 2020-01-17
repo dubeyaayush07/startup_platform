@@ -292,3 +292,7 @@ li:hover {
 .grid-item a:hover {
     color: #069370;
 }
+
+.card {
+    margin: 2rem;
+}

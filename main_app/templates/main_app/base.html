@@ -23,7 +23,7 @@
             <ul>
                 <li><a href="{% url 'home' %}" class="active">HOME</a></li>
                 <li><a href="#">ABOUT</a></li>
-                <li><a href="{% url 'home' %}">STARTUPS</a></li>
+                <li><a href="{% url 'startups' %}">STARTUPS</a></li>
                 {% if not user.is_authenticated %}
                 <li><a href="{% url 'register' %}">REGISTER</a></li>
                 <li><a href="{% url 'login' %}">LOGIN</a></li>
