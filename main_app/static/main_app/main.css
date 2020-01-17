@@ -293,7 +293,7 @@
         color: #069370;
     }
     
-    .card {
+    .rpg-card {
         width: 22.3%;
         display: grid;
         grid-template-columns: 300px;
@@ -348,7 +348,7 @@
         flex-direction: row-reverse;
     }
     
-    .card:hover {
+    .rpg-card:hover {
         transform: scale(1.15);
         box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
     }
