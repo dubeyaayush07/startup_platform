@@ -7,6 +7,9 @@ from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 def home(request):
     return render(request, 'main_app/home.html')
 
+def about(request):
+    return render(request, 'main_app/about.html')    
+
 
 class StartupListView(LoginRequiredMixin, UserPassesTestMixin, ListView):
     model = Profile
