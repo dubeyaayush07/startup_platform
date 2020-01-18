@@ -7,12 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Baskervville&display=swap" rel="stylesheet ">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'main_app/main.css' %}">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css " rel="stylesheet ">
     <link rel="stylesheet" href="{% static 'main_app/main2.css' %}">
+    <link rel="stylesheet" href="{% static 'main_app/main3.css' %}">
     <title>Startup Platform</title>
 </head>
 
@@ -25,14 +26,13 @@
                 <li><a href="{% url 'home' %}" class="active">HOME</a></li>
                 <li><a href="#">ABOUT</a></li>
                 {% if user.is_authenticated and user.profile.role == 'M' %}
-                    <li><a href="{% url 'dashboard' %}">DASHBOARD</a></li>
-                {% endif %}
-                {% if not user.is_authenticated %}
-                    <li><a href="{% url 'register' %}">REGISTER</a></li>
-                    <li><a href="{% url 'login' %}">LOGIN</a></li>
+                <li><a href="{% url 'dashboard' %}">DASHBOARD</a></li>
+                {% endif %} {% if not user.is_authenticated %}
+                <li><a href="{% url 'register' %}">REGISTER</a></li>
+                <li><a href="{% url 'login' %}">LOGIN</a></li>
                 {% else %}
-                    <li><a href="{% url 'profile' %}">PROFILE</a></li>
-                    <li><a href="{% url 'logout' %}">LOGOUT</a></li>
+                <li><a href="{% url 'profile' %}">PROFILE</a></li>
+                <li><a href="{% url 'logout' %}">LOGOUT</a></li>
                 {% endif %}
 
             </ul>

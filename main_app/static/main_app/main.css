@@ -1,358 +1,359 @@
-    @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
-    body {
-        background: white;
-        font-family: 'Poppins', sans-serif;
-    }
-    
-    .logo {
-        color: #069370;
-        height: 60px;
-        font-size: 36px;
-        line-height: 60px;
-        padding: 0 20px;
-        text-align: center;
-        box-sizing: border-box;
-        float: left;
-        font-weight: 700;
-        text-decoration: none;
-    }
-    
-    .logo:hover {
-        color: #057c5e;
-        text-decoration: none;
-    }
-    
-    .clearfix {
-        clear: both;
-    }
-    
-    nav {
-        float: right;
-    }
-    
-    nav ul {
-        margin: 0;
-        padding-top: 10px;
-        display: flex;
-    }
-    
-    nav ul li {
-        list-style: none;
-    }
-    
-    nav ul li a {
-        display: block;
-        margin: 10px, 0;
-        padding: 10px 20px;
-        text-decoration: none;
-        color: #262626;
-    }
-    
-    nav ul li a.active:hover {
-        background: #068666;
-    }
-    
-    nav ul li a.active,
-    nav ul li a:hover {
-        background: #6fd1a2;
-        color: #ffffff;
-        text-decoration: none;
-        transition: 0.5s;
-    }
-    
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+body {
+    background: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+    color: #069370;
+    height: 60px;
+    font-size: 36px;
+    line-height: 60px;
+    padding: 0 20px;
+    text-align: center;
+    box-sizing: border-box;
+    float: left;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.logo:hover {
+    color: #057c5e;
+    text-decoration: none;
+}
+
+.clearfix {
+    clear: both;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding-top: 10px;
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    display: block;
+    margin: 10px, 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #262626;
+}
+
+nav ul li a.active:hover {
+    background: #068666;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    background: #6fd1a2;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+header {
+    width: 100%;
+    padding: 5px;
+    background: white;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width:1200px) {
     header {
-        width: 100%;
-        padding: 5px;
-        background: white;
-        box-sizing: border-box;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    }
-    
-    @media (max-width:1200px) {
-        header {
-            margin: 20px;
-        }
-    }
-    
-    @media (max-width:768px) {
-        .menu-toggle {
-            display: block;
-            width: 40px;
-            height: 40px;
-            margin: 10px;
-            background: #ffffff;
-            float: right;
-            cursor: pointer;
-            text-align: center;
-            font-size: 30px;
-            color: #069370;
-        }
-        .menu-toggle:before {
-            content: "\f0c9";
-            font-family: fontAwesome;
-            line-height: 40px;
-        }
-        .menu-toggle.active:before {
-            content: "\f00d";
-        }
-        nav {
-            display: none;
-        }
-        nav.active {
-            display: block;
-            width: 100%;
-        }
-        nav.active ul {
-            display: block;
-        }
-        nav.active ul li {
-            margin: 0;
-        }
-    }
-    
-    .jumbotron-area {
-        height: 500px;
-        width: 100%;
-        background: #069370;
-    }
-    
-    .jumbotron {
-        max-width: 500px;
-        height: 300px;
-        position: absolute;
-        margin-left: 800px;
-        margin-top: 100px;
-    }
-    
-    .jumbotron-text {
-        max-width: 500px;
-        position: absolute;
-        color: whitesmoke;
-        margin-top: 100px;
-        margin-left: 75px;
-    }
-    
-    .jumbotron-text h1 {
-        color: whitesmoke;
-    }
-    
-    h1 {
-        color: #069370;
-        text-align: center;
-    }
-    
-    .text {
-        max-height: 100%;
-        display: block;
-        z-index: initial;
-    }
-    
-    .text {
-        width: 100%;
-        max-width: 100%;
-        background: white;
-        margin-top: 40px;
-        border-radius: 50px;
-        margin-bottom: 50px;
-        position: relative;
-        -webkit-box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.56);
-        -moz-box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.56);
-        box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.56);
-    }
-    
-    .text {
-        display: flex;
-        padding: 30px;
-        margin-left: 120px;
-        width: calc(100% - 300px);
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .flex-container {
-        height: 400px;
-        width: 100%;
-    }
-    
-    .mentor-jumbotron {
-        width: 40%;
-        height: 375px;
-        background-color: #069370;
-        color: whitesmoke;
-    }
-    
-    .mentor-jumbotron h1 {
-        color: whitesmoke;
-    }
-    
-    .startup-area {
-        height: 400px;
-        width: 100%;
-        margin-bottom: 100px;
-    }
-    
-    .mentor-area {
-        height: 400px;
-        width: 100%;
-        margin-bottom: 100px;
-    }
-    
-    .startup-jumbotron {
-        width: 40%;
-        height: 350px;
-        margin-left: 60%;
-        background-color: #069370;
-        color: whitesmoke;
-    }
-    
-    .startup-jumbotron h1 {
-        color: whitesmoke;
-    }
-    
-    .button {
-        padding: 15px 32px;
-        background-color: white;
-        color: #069370;
-        text-align: center;
-        border-radius: 10px;
-        border: 2px solid #069370;
-        font-weight: 500;
-        font-size: 25px;
         margin: 20px;
-        width: 50%;
     }
-    
-    #small-button {
-        padding: 10px 24px;
-        background-color: white;
-        color: #069370;
-        text-align: center;
-        border-radius: 20px;
-        border: 2px solid #069370;
-        font-weight: 500;
-        font-size: 18px;
-        margin: 5px;
-        margin-left: 125px;
-    }
-    
-    .button:hover {
-        border: 2px solid white;
-        background: #6fd1a2;
-        color: white;
-    }
-    
-    #small-button:hover {
-        border: 4px solid #045a44;
-        background: whitesmoke;
-        color: #035f48;
-    }
-    
-    .buttonHolder {
-        text-align: center;
-    }
-    
-    .footer-area {
-        height: 275px;
-        width: 98%;
-        margin-left: 15px;
-        background-color: whitesmoke;
-        margin-bottom: 20px;
-        text-align: center;
-    }
-    
-    .footer-area h1 {
-        font-size: 30px;
-    }
-    
-    .grid-container {
-        display: grid;
-        grid-template-columns: auto auto;
-        background-color: whitesmoke;
-        padding: 10px;
-    }
-    
-    .grid-item {
-        padding: 10px;
-        font-size: 15px;
-        text-align: center;
-    }
-    
-    #community,
-    #learn-more {
-        font-size: 20px;
-        color: #069370;
-    }
-    
-    .grid-item a {
-        color: black;
-        text-decoration: none;
-    }
-    
-    .grid-item a:hover {
-        color: #069370;
-    }
-    
-    .rpg-card {
-        width: 22.3%;
-        display: grid;
-        grid-template-columns: 300px;
-        grid-template-rows: 190px 190px;
-        grid-template-areas: "image" "text";
-        border-radius: 18px;
-        background: white;
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
-        font-family: roboto;
-        text-align: center;
-        transition: 0.5s ease;
+}
+
+@media (max-width:768px) {
+    .menu-toggle {
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+        background: #ffffff;
+        float: right;
         cursor: pointer;
-        margin: 30px;
-    }
-    
-    .card-text {
-        grid-area: text;
-        margin: 25px;
-    }
-    
-    .card-text .date {
+        text-align: center;
+        font-size: 30px;
         color: #069370;
-        font-size: 13px;
     }
-    
-    .card-text p {
-        color: grey;
-        font-size: 15px;
-        font-weight: 300;
+    .menu-toggle:before {
+        content: "\f0c9";
+        font-family: fontAwesome;
+        line-height: 40px;
     }
-    
-    .card-text h2 {
-        margin-top: 0px;
-        font-size: 28px;
+    .menu-toggle.active:before {
+        content: "\f00d";
     }
-    
-    .card-image {
-        grid-area: image;
-        background: url("https://images.unsplash.com/photo-1529119368496-2dfda6ec2804?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-        background-size: contain;
+    nav {
+        display: none;
     }
-    
-    .mentor-area {
-        display: flex;
-        flex-direction: row;
+    nav.active {
+        display: block;
+        width: 100%;
     }
-    
-    .startup-area {
-        display: flex;
-        flex-direction: row-reverse;
+    nav.active ul {
+        display: block;
     }
-    
-    .rpg-card:hover {
-        transform: scale(1.15);
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+    nav.active ul li {
+        margin: 0;
     }
-    
-    hr {
-        border: 1px solid #069370;
-    }
+}
+
+.jumbotron-area {
+    height: 500px;
+    width: 100%;
+    background: #069370;
+}
+
+.jumbotron {
+    max-width: 500px;
+    height: 300px;
+    position: absolute;
+    margin-left: 800px;
+    margin-top: 100px;
+}
+
+.jumbotron-text {
+    max-width: 500px;
+    position: absolute;
+    color: whitesmoke;
+    margin-top: 100px;
+    margin-left: 75px;
+}
+
+.jumbotron-text h1 {
+    color: whitesmoke;
+}
+
+h1 {
+    color: #069370;
+    text-align: center;
+}
+
+.text {
+    max-height: 100%;
+    display: block;
+    z-index: initial;
+}
+
+.text {
+    width: 100%;
+    max-width: 100%;
+    background: white;
+    margin-top: 40px;
+    border-radius: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    -webkit-box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.56);
+    -moz-box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.56);
+    box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.56);
+}
+
+.text {
+    display: flex;
+    padding: 30px;
+    margin-left: 120px;
+    width: calc(100% - 300px);
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-container {
+    height: 400px;
+    width: 100%;
+}
+
+.mentor-jumbotron {
+    width: 40%;
+    height: 375px;
+    background-color: #069370;
+    color: whitesmoke;
+}
+
+.mentor-jumbotron h1 {
+    color: whitesmoke;
+}
+
+.startup-area {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.mentor-area {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.startup-jumbotron {
+    width: 40%;
+    height: 350px;
+    margin-left: 60%;
+    background-color: #069370;
+    color: whitesmoke;
+}
+
+.startup-jumbotron h1 {
+    color: whitesmoke;
+}
+
+.button {
+    padding: 15px 32px;
+    background-color: white;
+    color: #069370;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #069370;
+    font-weight: 500;
+    font-size: 25px;
+    margin: 20px;
+    width: 50%;
+}
+
+#small-button {
+    padding: 10px 24px;
+    background-color: white;
+    color: #069370;
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid #069370;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 5px;
+    margin-left: 125px;
+}
+
+.button:hover {
+    border: 2px solid white;
+    background: #6fd1a2;
+    color: white;
+}
+
+#small-button:hover {
+    border: 4px solid #045a44;
+    background: whitesmoke;
+    color: #035f48;
+}
+
+.buttonHolder {
+    text-align: center;
+}
+
+.footer-area {
+    height: 275px;
+    width: 98%;
+    margin-left: 15px;
+    background-color: whitesmoke;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.footer-area h1 {
+    font-size: 30px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: whitesmoke;
+    padding: 10px;
+}
+
+.grid-item {
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+
+#community,
+#learn-more {
+    font-size: 20px;
+    color: #069370;
+}
+
+.grid-item a {
+    color: black;
+    text-decoration: none;
+}
+
+.grid-item a:hover {
+    color: #069370;
+}
+
+.rpg-card {
+    width: 22.3%;
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 190px 190px;
+    grid-template-areas: "image" "text";
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    font-family: roboto;
+    text-align: center;
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin: 30px;
+}
+
+.card-text {
+    grid-area: text;
+    margin: 25px;
+}
+
+.card-text .date {
+    color: #069370;
+    font-size: 13px;
+}
+
+.card-text p {
+    color: grey;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.card-text h2 {
+    margin-top: 0px;
+    font-size: 28px;
+}
+
+.card-image {
+    grid-area: image;
+    background: url("https://images.unsplash.com/photo-1529119368496-2dfda6ec2804?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: contain;
+}
+
+.mentor-area {
+    display: flex;
+    flex-direction: row;
+}
+
+.startup-area {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.rpg-card:hover {
+    transform: scale(1.15);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+hr {
+    border: 1px solid #069370;
+}
