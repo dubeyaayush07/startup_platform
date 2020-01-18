@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from users.models import Profile
-from django.views.generic import ListView
+from django.views.generic import ListView, DetailView
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 
 
@@ -22,3 +22,6 @@ class StartupListView(LoginRequiredMixin, UserPassesTestMixin, ListView):
         if self.request.user.profile.role == 'M':
             return True
         return False
+
+
+
