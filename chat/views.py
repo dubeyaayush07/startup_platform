@@ -4,12 +4,15 @@ from django.http import JsonResponse
 from twilio.jwt.access_token import AccessToken
 from twilio.jwt.access_token.grants import ChatGrant
 from .models import Room
+from django.contrib.auth.decorators import login_required
  
 
 # Create your views here.
 
 from .models import Room
 
+
+@login_required
 def all_rooms(request):
 
     if request.user.profile.role == 'M':
@@ -19,11 +22,12 @@ def all_rooms(request):
 
     return render(request, 'chat/index.html', {'rooms': rooms})
 
-
+@login_required
 def room_detail(request, slug):
     room = Room.objects.get(slug=slug)
     return render(request, 'chat/room_detail.html', {'room': room})
-
+    
+@login_required
 def add_room(request, username):
     room_name = f'{request.user.username}-{username}'
     Room.objects.create(name=room_name, slug=room_name, description="This is a chat", startup=username, mentor=request.user.username)
