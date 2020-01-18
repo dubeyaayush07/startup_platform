@@ -22,6 +22,9 @@ class Profile(models.Model):
     role = models.CharField(max_length=1, choices=ROLE_CHOICES, default='S')
     description = models.TextField()
     category = models.CharField(max_length=6, choices=CATEGORY_CHOICES, default='EAD')
+    
+
+
 
     def __str__(self):
         return f'{self.user.username} Profile'
