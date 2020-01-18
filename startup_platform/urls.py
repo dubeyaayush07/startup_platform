@@ -15,8 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from chat import views as chat_views
 from users import views as user_views
 from django.contrib.auth import views as auth_views
+from django.conf.urls import url
+
+
 
 
 urlpatterns = [
@@ -27,4 +31,8 @@ urlpatterns = [
     path('login/', auth_views.LoginView.as_view(template_name='users/login.html'), name='login'),
     path('logout/', auth_views.LogoutView.as_view(template_name='users/logout.html'), name='logout'),
     path('', include('main_app.urls')),
+    path('arooms/', chat_views.all_rooms, name="all_rooms"),
+    url(r'rooms/(?P<slug>[-\w]+)/$', chat_views.room_detail, name="room_detail"),
+    url(r'token$', chat_views.token, name="token"),
+    path('add_room/<str:username>', chat_views.add_room, name='add_room'),
 ]
