@@ -114,7 +114,7 @@ header {
 .jumbotron-area {
     height: 500px;
     width: 100%;
-    background: #069370;
+    background-image: linear-gradient(#066950, #09aa82);
 }
 
 .jumbotron {
@@ -133,8 +133,22 @@ header {
     margin-left: 75px;
 }
 
+.para1 {
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+
+.para2 {
+    letter-spacing: 1.2px;
+    font-size: 18px;
+}
+
 .jumbotron-text h1 {
     color: whitesmoke;
+}
+
+.button {
+    cursor: pointer;
 }
 
 h1 {
@@ -383,8 +397,8 @@ img {
 
 .color-callout__content {
     text-align: center;
-    background-color: #069370;
-    color: black;
+    background-image: linear-gradient(#067559, #09aa82);
+    color: whitesmoke;
     font-size: 20px;
     padding: 50px;
     margin-bottom: 50px;
