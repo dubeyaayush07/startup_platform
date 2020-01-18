@@ -46,6 +46,8 @@ def profile(request):
 
     return render(request, 'users/profile.html', context)
 
-
-
+@login_required
+def dashboard(request):
+    profile = request.user.profile
+    return render(request, 'users/dashboard.html', {'profile' : profile})
 
