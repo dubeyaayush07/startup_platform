@@ -1,5 +1,59 @@
-{% extends "main_app/base.html" %}
-{% block content %}
-    <h1>{{ profile.user.username }}</h1>
-    <a href="{% url 'profile' %}">Edit Profile</a>
+{% extends "main_app/base.html" %} {% block content %}
+<div class="dashboard">
+    <!-- <h1>{{ profile.user.username }}</h1> -->
+    <!-- <a href="{% url 'profile' %}">Edit Profile</a> -->
+    <div class="dashboard-container">
+        <div class="sidebar">
+            <div class="dashboard-nav">
+                <ul>
+                    <li class="li-top">
+                        <a href="#">conversations</a>
+                    </li>
+                    <li>
+                        <a href="#">lorem ipsum</a>
+                    </li>
+                    <li>
+                        <a href="#">lorem ipsum</a>
+                    </li>
+                    <li>
+                        <a href="#">lorem ipsum</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>
+                        <h1>{{ profile.user.username }}</h1><br>
+                        <h2>{{ profile.get_role_display }}</h2>
+                    </h1>
+                    <p>{{ profile.description }}</p>
+                    <a href="{% url 'profile' %}" class="action-btn">Edit Profile</a>
+                </div>
+            </section>
+        </div>
+        <div class="footer">
+            <footer>
+                <div class="fav">
+                    <div class="footer-item">
+                        <a href="#"><i class="fa fa-facebook-square" style="font-size:36px"></i></a>
+                    </div>
+                    <div class="footer-item">
+
+                        <a href="#"><i class="fa fa-instagram" style="font-size:36px"></i></a>
+                    </div>
+                    <div class="footer-item">
+
+                        <a href="#"><i class="fa fa-linkedin-square" style="font-size:36px"></i></a>
+                    </div>
+                    <div class="footer-item">
+
+                        <a href="#"><i class="fa fa-twitter" style="font-size:36px; small-button"></i></a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</div>
 {% endblock content %}
