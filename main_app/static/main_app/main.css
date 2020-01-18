@@ -357,3 +357,70 @@ h1 {
 hr {
     border: 1px solid #069370;
 }
+
+.page-block__content {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.row {
+    margin-right: -1.8rem;
+    margin-left: -1.8rem;
+}
+
+.marketing-formatting {
+    color: #060F46;
+}
+
+img {
+    background-size: contain;
+}
+
+.container-flex {
+    margin-left: 60px;
+    display: flex;
+}
+
+.color-callout__content {
+    text-align: center;
+    background-color: #069370;
+    color: black;
+    font-size: 20px;
+    padding: 50px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.type-mega--sans {
+    background-color: black;
+    color: white;
+}
+
+#our_imgs {
+    border-radius: 10px;
+    border: 2px solid #069370;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+    width: 500px;
+}
+
+#left {
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-right: 150px;
+}
+
+.up {
+    position: relative;
+    text-align: center;
+}
+
+#img_r {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+#right {
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
