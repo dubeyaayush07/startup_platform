@@ -23,7 +23,7 @@
         <nav>
             <ul>
                 <li><a href="{% url 'home' %}" class="active">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
+                <li><a href="{% url 'about' %}">ABOUT</a></li>
                 {% if user.is_authenticated and user.profile.role == 'M' %}
                     <li><a href="{% url 'dashboard' %}">DASHBOARD</a></li>
                 {% endif %}
