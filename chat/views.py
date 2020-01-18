@@ -30,6 +30,8 @@ def room_detail(request, slug):
 @login_required
 def add_room(request, username):
     room_name = f'{request.user.username}-{username}'
+    if len(Room.objects.filter(name = room_name)) != 0:
+        return redirect('all_rooms')
     Room.objects.create(name=room_name, slug=room_name, description="This is a chat", startup=username, mentor=request.user.username)
     return redirect('all_rooms')
 
