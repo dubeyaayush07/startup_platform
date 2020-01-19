@@ -12,6 +12,18 @@ def home(request):
 def about(request):
     return render(request, 'main_app/about.html')    
 
+def startupStories(request):
+    return render(request, 'main_app/startup_stories.html')
+
+def startupStories2(request):
+    return render(request, 'main_app/startup_stories2.html')
+
+def mentorStories(request):
+    return render(request, 'main_app/mentor_stories.html')
+
+def mentorStories2(request):
+    return render(request, 'main_app/mentor_stories2.html')    
+
 
 class PostListView(ListView):
     model = Post
