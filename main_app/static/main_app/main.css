@@ -438,3 +438,50 @@ img {
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
+.card-text a{
+    text-decoration: none;
+}
+
+.text1 {
+    max-height: 100%;
+    display: block;
+    z-index: initial;
+}
+
+.text1 {
+    width: 100%;
+ max-width: 100%;
+    background: white;
+    margin-top: 40px;
+    border-radius: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    -webkit-box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.56);
+    -moz-box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.56);
+    box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.56);
+}
+
+.text1 {
+    margin-top: 0;
+    display: flex;
+    padding: 30px;
+    margin-left: 320px;
+    width: calc(100% - 700px);
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.para3{
+    letter-spacing: 1.2px;
+    padding-left: 160px;
+    padding-right: 160px;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.color{
+    background-color: #066950;
+    
+}
